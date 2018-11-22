@@ -1,0 +1,130 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a { color: inherit; text-decoration: none;}
+ul,li{
+  list-style: none;
+}
+html,body{
+  height: 100%;
+  font-family: "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", STHeiti, "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
+}
+.pageWrapper{
+  height: 100%;
+}
+.aside{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 230px;
+  height: 100%;
+  background: #fff;
+}
+.aside .myResume{
+  display: inline-block;
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 64px;
+  margin-left: 44px;
+}
+.aside ul{
+  padding: 44px;
+  margin-top: 32px;
+}
+.aside li{
+  margin: 32px 0;
+}
+.aside .nav-item{
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 300;
+  color: #b4b5b4;
+  display: flex;
+  align-items: flex-end;
+  transition: all 0.2s;
+}
+.aside .nav-item:hover{
+  color: #000;
+}
+.aside .nav-item::before{
+  content: '';
+  display: block;
+  position: absolute;
+  background: #000;
+  height: 1px;
+  width: 0px;
+  left: -44px;
+  top: 11px;
+}
+.aside .nav-item.active{
+  color: #000;
+  position: relative;
+}
+.aside .nav-item.active::before{
+  content: '';
+  display: block;
+  position: absolute;
+  background: #000;
+  height: 1px;
+  width: 26px;
+  left: -44px;
+  top: 11px;
+  transition: width 0.2s ease-out;
+}
+.aside .nav-item .en{
+  font-size: 12px;
+  line-height: 12px;
+  margin-left: 0.4em;
+}
+.aside .footer{
+  position: absolute;
+  bottom: 40px;
+  left: 44px;
+  display: flex;
+}
+.aside .footer .iconBook{
+  font-size: 1.1em;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  background: #b4b5b4;
+  border-radius: 50%;
+  line-height: 40px;
+  text-align: center;
+}
+.aside .footer .iconGit{
+  font-size: 1.3em;
+  margin-left: 0.6em;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  background: #b4b5b4;
+  border-radius: 50%;
+  line-height: 40px;
+  text-align: center;
+}
+.aside .footer a{
+  transition: all 0.2s;
+}
+.aside .footer a:hover{
+  color: #fff;
+  background: #000;
+}
+.content{
+  height: 100%;
+  background: #fbfbfb;
+}
+.content{
+  margin-left: 230px;
+  padding-top: 64px;
+}
+.content .container{
+  height: 100%;
+  padding: 0 48px;
+}
+.content .container h1{
+  font-size: 40px;
+  font-weight: 300;
+}
