@@ -9,23 +9,24 @@ ul,li{
 }
 html,body{
   height: 100%;
-  font-family: "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", STHeiti, "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
+  font-family: "PingFang SC",  "Hiragino Sans GB","Source Han Sans CN","Helvetica Neue", Arial, 'STHeiti', "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC",  "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
 }
 .pageWrapper{
   height: 100%;
 }
 .aside{
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 230px;
   height: 100%;
   background: #fff;
+  z-index: 99;
 }
 .aside .myResume{
   display: inline-block;
   font-size: 22px;
-  font-weight: 600;
+  font-weight: 800;
   margin-top: 64px;
   margin-left: 44px;
 }
@@ -74,8 +75,8 @@ html,body{
   transition: width 0.2s ease-out;
 }
 .aside .nav-item .en{
-  font-size: 12px;
-  line-height: 12px;
+  font-size: 14px;
+  line-height: 14px;
   margin-left: 0.4em;
 }
 .aside .footer{
@@ -112,19 +113,120 @@ html,body{
   color: #fff;
   background: #000;
 }
-.content{
+.aboutMe.visible{
+  display: block;
+}
+.aboutMe{
+  display: none;
+  margin-left: 230px;
+  /* border: 1px solid red; */
+  padding: 64px;
   height: 100%;
   background: #fbfbfb;
 }
-.content{
-  margin-left: 230px;
-  padding-top: 64px;
-}
-.content .container{
+.aboutMe .container{
   height: 100%;
-  padding: 0 48px;
+  display: flex;
+  /* border: 1px solid red; */
+  align-items: flex-start;
+  padding: 40px 0;
 }
-.content .container h1{
+.aboutMe .welcome{
+  display: inline-block;
+  padding: 4px 6px;
+  font-size: 14px;
+  font-weight: 300;
+  background: #000;
+  color: #fff;
+  border-radius: 2px;
+  position: relative;
+}
+.aboutMe .welcome::after{
+  content: '';
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 4px;
+  border-right: 10px solid transparent;
+  border-top: 8px solid #000;
+}
+.aboutMe .container h1{
   font-size: 40px;
   font-weight: 300;
+  line-height: 40px;
+  margin-top: 28px;
+}
+.aboutMe .container .selfIntroduction{
+  width: 100%;
+  margin-left: 48px;
+}
+.aboutMe .container p{
+  font-size: 16px;
+  font-weight: 300;
+  color: #666;
+  margin-top: 12px;
+}
+.aboutMe .container hr{
+  height: 0;
+  border: none;
+  border-bottom: 1px solid #cfcfcf;
+  margin-top: 24px;
+}
+.aboutMe .container dl::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+.aboutMe .container dl{
+  margin-top: 18px;
+}
+.aboutMe .container dl dt,
+.aboutMe .container dl dd {
+  font-size: 16px; 
+  font-weight: 300;   
+  float: left; 
+  padding: 8px 0;
+}
+.aboutMe .container dl dt {
+  width: 16%;  
+}
+.aboutMe .container dl dd {
+  width: 84%;  
+}
+.pictureWrapper{
+  height: 100%;
+}
+.aboutMe .picture{
+  width: 300px;
+  height: 400px;
+  border-radius: 2px;
+  background-image: url('./img/img_1.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.aboutMe .picture:hover{
+  box-shadow: 0 20px 28px -10px rgba(0, 0, 0, .44);
+}
+.portfolio.visible{
+ display: block;
+}
+.portfolio{
+  /* border: 1px solid red; */
+  display: none;
+  padding: 0 64px;
+  height: 100%;
+  background: #fbfbfb;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.portfolio .container{
+  margin-left: 230px;
+  height: 100%;
+  display: flex;
+  border: 1px solid red;
+  align-items: flex-start;
+  padding: 40px 0;
 }
