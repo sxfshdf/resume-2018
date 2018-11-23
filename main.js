@@ -24,6 +24,8 @@ $('.nav').on('click','li',(e)=>{
     $(element).addClass('visible')
       .siblings('.visible').removeClass('visible')
   }
+  ScrollReveal().reveal(element, { beforeReset: myCallback });
 })
+
 
 

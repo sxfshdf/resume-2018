@@ -10,6 +10,7 @@ ul,li{
 html,body{
   height: 100%;
   font-family: "PingFang SC",  "Hiragino Sans GB","Source Han Sans CN","Helvetica Neue", Arial, 'STHeiti', "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC",  "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
+  background: #fbfbfb;
 }
 .pageWrapper{
   height: 100%;
@@ -25,7 +26,7 @@ html,body{
 }
 .aside .myResume{
   display: inline-block;
-  font-size: 22px;
+  font-size: 26px;
   font-weight: 800;
   margin-top: 64px;
   margin-left: 44px;
@@ -122,7 +123,7 @@ html,body{
   /* border: 1px solid red; */
   padding: 64px;
   height: 100%;
-  background: #fbfbfb;
+  
 }
 .aboutMe .container{
   height: 100%;
@@ -216,7 +217,6 @@ html,body{
   display: none;
   padding: 0 64px;
   height: 100%;
-  background: #fbfbfb;
   position: absolute;
   width: 100%;
   top: 0;
@@ -226,7 +226,12 @@ html,body{
   margin-left: 230px;
   height: 100%;
   display: flex;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   align-items: flex-start;
   padding: 40px 0;
+}
+.portfolio h1{
+  font-size: 42px;
+  font-weight: 400;
+  line-height: 42px;
 }
