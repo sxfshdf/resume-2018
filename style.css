@@ -206,13 +206,17 @@ html,body{
   background-size: cover;
   background-repeat: no-repeat;
 }
-.aboutMe .picture:hover{
+/* .aboutMe .picture:hover{
   box-shadow: 0 20px 28px -10px rgba(0, 0, 0, .44);
-}
-.portfolio.visible{
+} */
+.portfolio.visible,
+.skills.visible,
+.contact.visible{
  display: block;
 }
-.portfolio{
+.portfolio,
+.skills,
+.contact{
   /* border: 1px solid red; */
   display: none;
   padding: 0 64px;
@@ -222,16 +226,113 @@ html,body{
   top: 0;
   left: 0;
 }
-.portfolio .container{
+.portfolio .container,
+.skills .container,
+.contact .container{
   margin-left: 230px;
   height: 100%;
-  display: flex;
   /* border: 1px solid red; */
-  align-items: flex-start;
   padding: 40px 0;
 }
-.portfolio h1{
+.portfolio h1,
+.skills h1,
+.contact h1{
   font-size: 42px;
   font-weight: 400;
   line-height: 42px;
+}
+.portfolio .itemDetail{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.item .itemHeader{
+  font-size: 16px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  margin: 44px 0;
+}
+.item hr{
+  flex: 1;
+  height: 0;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  margin-left: 12px;
+}
+.item .itemName{
+  font-weight: 400;
+}
+.item .image{
+  flex: 1 1 50%;
+}
+.item img:hover{
+  box-shadow: 0 20px 28px -10px rgba(0, 0, 0, .44);
+}
+.item .Introduction{
+  flex: 1 1 50%;
+  margin-right: 120px;
+  font-weight: 300;
+}
+.item .strong{
+  font-weight: 400;
+}
+.item h2{
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+.item p{
+  margin: 20px 0;
+  letter-spacing: 1px;
+  line-height: 26px;
+  text-align: justify;
+}
+.item img{
+  max-width: 100%;
+  max-height: 100%;
+}
+.item .button span{
+  margin-top: 16px;
+  font-weight: 400;
+  display: inline-block;
+  padding: 4px 12px;
+  border: 1px solid #000;
+  border-radius: 2px;
+}
+.item .button span:hover{
+  color: #fff;
+  background: #000;
+}
+.item .button .github{
+  margin-left: 8px;
+}
+.skills ul{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 64px;
+  align-items: flex-start;
+}
+.skills ul li{
+  flex: 1 0 45%;
+  margin: 12px 0;
+  align-items: center;
+  margin-right: 5%;
+  display: relative;
+}
+
+.skills ul li:nth-child(even){
+  margin-right: 0;
+}
+.skills h3{
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.skills li p{
+  font-weight: 300;
+  text-align: justify;
+  letter-spacing: 1px;
+  line-height: 26px;
 }
