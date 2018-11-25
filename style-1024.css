@@ -10,7 +10,7 @@ ul,li{
 html,body{
   height: 100%;
   font-family: "PingFang SC",  "Hiragino Sans GB","Source Han Sans CN","Helvetica Neue", Arial, 'STHeiti', "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC",  "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
-  background: #fff;
+  background: #fbfbfb;
 }
 .pageWrapper{
   height: 100%;
@@ -19,74 +19,24 @@ html,body{
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 72px;
+  width: 230px;
+  height: 100%;
   background: #fff;
-  /* border: 1px solid red; */
   z-index: 99;
-  transition: height 0.2s ease 0.1s;
-}
-.aside.active{
-  height: 360px;
 }
 .aside .myResume{
   display: inline-block;
-  font-size: 22px;
+  font-size: 26px;
   font-weight: 800;
-  position: fixed;
-  left: 28px;
-  top: 36px;
-  transform: translateY(-50%);
-}
-.mask{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  /* border: 1px solid red; */
-  transition: all 0.2s ease;
-}
-.mask.active{
-  background: rgba(0,0,0,0.2);
-  z-index: 1;
-}
-.aside button{
-  position: absolute;
-  right: 11px;
-  top: 36px;
-  transform: translateY(-50%);
-  margin-top: 2px;
-  outline: none;
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  margin-top: 64px;
+  margin-left: 44px;
 }
 .aside ul{
-  display: none;
-  opacity: 0;
-  padding: 0 44px;
+  padding: 44px;
   margin-top: 32px;
-  position: fixed;
-  top: 52px;
 }
-.aside ul.active{
-  display: block;
-  /* opacity: 1;
-  margin-top: 32px; */
-  animation: 0.3s ease 0.2s forwards navMove;
-}
-@keyframes navMove{
-  0%{
-    opacity: 0;
-    margin-top: 48px;
-  }
-  100%{
-    opacity: 1;
-    margin-top: 32px;
-  }
-}
-
 .aside li{
-  margin: 24px 0;
+  margin: 32px 0;
 }
 .aside .nav-item{
   font-size: 22px;
@@ -131,62 +81,56 @@ html,body{
   margin-left: 0.4em;
 }
 .aside .footer{
-  
+  position: absolute;
+  bottom: 40px;
+  left: 44px;
   display: flex;
-}
-.aside .footerContainer{
-  position: fixed;
-  top: 310px;
-  left: 32px;
-  display: none;
-  opacity: 0;
-}
-.aside .footerContainer.active{
-  display: block;
-  animation: 0.2s ease 0.3s forwards moveFooterIcon;
-}
-@keyframes moveFooterIcon{
-  0%{
-    opacity: 0;
-    top: 326px;
-  }
-  100%{
-    opacity: 1;
-    top: 310px;
-  }
 }
 .aside .footer .iconBook{
   font-size: 1.1em;
-  color: #000;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  background: #b4b5b4;
+  border-radius: 50%;
   line-height: 40px;
+  text-align: center;
 }
 .aside .footer .iconGit{
   font-size: 1.3em;
-  margin-left: 1em;
-  color: #000;
+  margin-left: 0.6em;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  background: #b4b5b4;
+  border-radius: 50%;
   line-height: 40px;
   text-align: center;
-  margin-top: -1px;
 }
-
+.aside .footer a{
+  transition: all 0.2s;
+}
+.aside .footer a:hover{
+  color: #fff;
+  background: #000;
+}
 .aboutMe.visible{
   display: block;
 }
 .aboutMe{
   display: none;
+  margin-left: 230px;
   /* border: 1px solid red; */
-  padding: 28px;
+  padding: 64px;
   height: 100%;
   
 }
 .aboutMe .container{
-  /* height: 100%; */
+  height: 100%;
   display: flex;
-  flex-direction: column-reverse;
   /* border: 1px solid red; */
-  /* align-items: flex-start; */
+  align-items: flex-start;
   padding: 40px 0;
-  margin-top: 24px;
 }
 .aboutMe .welcome{
   display: inline-block;
@@ -215,8 +159,7 @@ html,body{
 }
 .aboutMe .container .selfIntroduction{
   width: 100%;
-  /* margin-top: 24px; */
-  /* margin-left: 48px; */
+  margin-left: 48px;
 }
 .aboutMe .container p{
   font-size: 16px;
@@ -230,6 +173,11 @@ html,body{
   border-bottom: 1px solid #cfcfcf;
   margin-top: 24px;
 }
+.aboutMe .container dl::after{
+  content: '';
+  display: block;
+  clear: both;
+}
 .aboutMe ul{
   display: flex;
   flex-direction: column;
@@ -237,7 +185,7 @@ html,body{
   margin-top: 24px;
 }
 .aboutMe li{
-  margin: 8px 0;
+  margin: 10px 0;
   display: flex;
 }
 .aboutMe .age,.aboutMe .sex,.aboutMe .position,
@@ -245,7 +193,7 @@ html,body{
 .aboutMe .city{
   white-space: nowrap;
   margin-right: 20px;
-  width: 4em;
+  width: 5em;
 }
 .aboutMe span{
   display: inline-block;
@@ -256,8 +204,6 @@ html,body{
 }
 .aboutMe .picture{
   flex: 1 1 50%;
-  text-align: center;
-  margin-top: 32px;
 }
 
 /* .aboutMe .picture:hover{
@@ -273,7 +219,7 @@ html,body{
 .contact{
   /* border: 1px solid red; */
   display: none;
-  padding: 0 28px;
+  padding: 0 64px;
   height: 100%;
   position: absolute;
   width: 100%;
@@ -283,27 +229,30 @@ html,body{
 .portfolio .container,
 .skills .container,
 .contact .container{
+  margin-left: 230px;
   height: 100%;
   /* border: 1px solid red; */
-  padding: 96px 0;
+  padding: 40px 0;
 }
 .portfolio h1,
 .skills h1,
 .contact h1{
-  font-size: 32px;
+  font-size: 42px;
   font-weight: 400;
   line-height: 42px;
 }
 .portfolio .itemDetail{
   display: flex;
   flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
 }
 .item .itemHeader{
   font-size: 16px;
   font-weight: 400;
   display: flex;
   align-items: center;
-  margin: 28px 0;
+  margin: 44px 0;
 }
 .item hr{
   flex: 1;
@@ -325,19 +274,17 @@ html,body{
   flex: 1;
   font-weight: 300;
   width: 100%;
-  margin-top: 16px;
-  margin-right: 0;
+  margin-top: 28px;
 }
 .item .strong{
   font-weight: 400;
 }
 .item h2{
   font-weight: 400;
-  margin-bottom: 16px;
 }
 .item p{
-  margin: 12px 0;
-  letter-spacing: 0;
+  margin: 20px 0;
+  letter-spacing: 1px;
   line-height: 26px;
   text-align: justify;
 }
@@ -361,11 +308,14 @@ html,body{
   margin-left: 8px;
 }
 .skills .skillsWrapper{
-  margin-top: 20px;
+  margin-top: 56px;
 }
 .skills ul{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  
+  align-items: flex-start;
 }
 .skills ul li{
   flex: 1 0 45%;
@@ -384,7 +334,7 @@ html,body{
 .skills li p{
   font-weight: 300;
   text-align: justify;
-  letter-spacing: 0;
+  letter-spacing: 1px;
   line-height: 26px;
   margin-top: 4px;
 }
@@ -410,7 +360,7 @@ html,body{
   margin-top: 8px;
 }
 .contact .information{
-  font-size: 20px;
+  font-size: 36px;
   font-weight: 300;
 }
 .contact .fa-envelope{
