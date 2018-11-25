@@ -1,16 +1,57 @@
+
 ScrollReveal().reveal('.pictureWrapper',{
   delay: 0,
-  useDelay: 'onload',
+  useDelay: 'always',
   reset: true,
-  distance: '50px',
+  distance: '20px',
   duration: 500 ,
   easing: 'ease'
 })
 ScrollReveal().reveal('.selfIntroduction', { 
   delay: 300,
-  useDelay: 'onload',
+  useDelay: 'always',
   reset: true,
-  distance: '50px',
+  distance: '20px',
+  duration: 500 ,
+  easing: 'ease'
+})
+ScrollReveal().reveal('h1', { 
+  delay: 0,
+  useDelay: 'always',
+  reset: true,
+  distance: '20px',
+  duration: 500 ,
+  easing: 'ease'
+})
+ScrollReveal().reveal('.canvas', { 
+  delay: 200,
+  useDelay: 'always',
+  reset: true,
+  distance: '20px',
+  duration: 500 ,
+  easing: 'ease'
+})
+ScrollReveal().reveal('.fm', { 
+  delay: 300,
+  useDelay: 'always',
+  reset: true,
+  distance: '20px',
+  duration: 500 ,
+  easing: 'ease'
+})
+ScrollReveal().reveal('.skillsWrapper', { 
+  delay: 200,
+  useDelay: 'always',
+  reset: true,
+  distance: '20px',
+  duration: 500 ,
+  easing: 'ease'
+})
+ScrollReveal().reveal('.contentWrapper', { 
+  delay: 200,
+  useDelay: 'always',
+  reset: true,
+  distance: '20px',
   duration: 500 ,
   easing: 'ease'
 })
@@ -24,7 +65,14 @@ $('.nav').on('click','li',(e)=>{
     $(element).addClass('visible')
       .siblings('.visible').removeClass('visible')
   }
+  ScrollReveal().reveal('.pictureWrapper', { afterReset: myCallback });
 })
+
+function myCallback (el) {
+  el.classList.remove('is-animating');
+}
+
+
 
 
 

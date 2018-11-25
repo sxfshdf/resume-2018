@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
     crossorigin="anonymous">
   <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="./vendor/echarts.js"></script>
 </head>
 
 <body>
@@ -77,7 +78,7 @@
       <div class="container">
         <h1>Portfolio</h1>
         <div class="itemWrapper">
-          <div class="item">
+          <div class="item canvas">
             <div class="itemHeader">
               <div class="itemName">画板</div>
               <hr>
@@ -92,80 +93,103 @@
                     <span class="try">Try it</span>
                   </a>
                   <a href="">
-                      <span class="github">Github</span>
-                    </a>
+                    <span class="github">Github</span>
+                  </a>
                 </div>
               </div>
               <div class="image">
-                <img src="./img/canvas.jpg" alt=""  data-tilt data-tilt-max="10" data-tilt-speed="300" data-tilt-perspective="1000" data-tilt-scale="1.1">
+                <img src="./img/canvas.jpg" alt="" data-tilt data-tilt-max="10" data-tilt-speed="300"
+                  data-tilt-perspective="1000" data-tilt-scale="1.1">
               </div>
             </div>
           </div>
-          <div class="item">
-              <div class="itemHeader">
-                <div class="itemName">我的FM</div>
-                <hr>
+          <div class="item fm">
+            <div class="itemHeader">
+              <div class="itemName">我的FM</div>
+              <hr>
+            </div>
+            <div class="itemDetail">
+              <div class="Introduction">
+                <h2>我的FM </h2>
+                <p>使用原生 js 实现一个 音乐播放器，可以选择专辑，随机播放歌曲等功能。</p>
+                <p>关键词：<span class="strong">html5 Audo API的使用、组件化思路、ajax、跨域 </span></p>
+                <div class="button">
+                  <a href="">
+                    <span class="try">Try it</span>
+                  </a>
+                  <a href="">
+                    <span class="github">Github</span>
+                  </a>
+                </div>
               </div>
-              <div class="itemDetail">
-                <div class="Introduction">
-                  <h2>我的FM </h2>
-                  <p>使用原生 js 实现一个 音乐播放器，可以选择专辑，随机播放歌曲等功能。</p>
-                  <p>关键词：<span class="strong">html5 Audo API的使用、组件化思路、ajax、跨域 </span></p>
-                  <div class="button">
-                    <a href="">
-                      <span class="try">Try it</span>
-                    </a>
-                    <a href="">
-                        <span class="github">Github</span>
-                      </a>
-                  </div>
-                </div>
-                <div class="image">
-                  <img src="./img/canvas.jpg" alt=""  data-tilt data-tilt-max="10" data-tilt-speed="300" data-tilt-perspective="1000" data-tilt-scale="1.1">
-                </div>
+              <div class="image">
+                <img src="./img/canvas.jpg" alt="" data-tilt data-tilt-max="10" data-tilt-speed="300"
+                  data-tilt-perspective="1000" data-tilt-scale="1.1">
               </div>
             </div>
+          </div>
         </div>
       </div>
     </main>
     <main id="skills" class="skills">
       <div class="container">
-          <h1>Skills</h1>
-          <div class="skillsWrapper">
-            <ul>
-              <li>
-                <h3>HTML 5 & CSS 3</h3>
-                <p>能独立制作精美网页，掌握 CSS 3 动画、过渡效果、响应式等常用技术。</p>
-              </li>
-              <li>
-                  <h3>jQuery</h3>
-                  <p>熟悉 jQuery 的常用 API，能使用 jQuery 制作网站、轮播、Tab 组件等。</p>
-              </li>
-              <li>
-                  <h3>移动端页面</h3>
-                  <p>会使用 REM、vw/vh、FastClick 等技术制作适配手机设备的页面。</p>
-              </li>
-              <li>
-                  <h3>前端框架 </h3>
-                  <p>理解 MVC、MVVM 等思想，可以熟练使用相关的库，如 Vue、React</p>
-              </li>
-              <li>
-                  <h3>小程序制作</h3>
-                  <p>可以独立进行小程序开发。</p>
-              </li>
-              <li>
-                  <h3>Vue</h3>
-                  <p>熟悉 Vue 常用功能，如组件、Vue-Router、双向绑定等。</p>
-              </li>
-            </ul>
-          </div>
+        <h1>Skills</h1>
+        <div class="skillsWrapper">
+          <ul>
+            <li>
+              <h3>HTML 5 & CSS 3</h3>
+              <p>能独立制作精美网页，掌握 CSS 3 动画、过渡效果、响应式等常用技术。</p>
+            </li>
+            <li>
+              <h3>jQuery</h3>
+              <p>熟悉 jQuery 的常用 API，能使用 jQuery 制作网站、轮播、Tab 组件等。</p>
+            </li>
+            <li>
+              <h3>移动端页面</h3>
+              <p>会使用 REM、vw/vh、FastClick 等技术制作适配手机设备的页面。</p>
+            </li>
+            <li>
+              <h3>前端框架 </h3>
+              <p>理解 MVC、MVVM 等思想，可以熟练使用相关的库，如 Vue、React</p>
+            </li>
+            <li>
+              <h3>小程序制作</h3>
+              <p>可以独立进行小程序开发。</p>
+            </li>
+            <li>
+              <h3>Vue</h3>
+              <p>熟悉 Vue 常用功能，如组件、Vue-Router、双向绑定等。</p>
+            </li>
+          </ul>
+        </div>
       </div>
     </main>
     <main id="contact" class="contact">
-        <div class="container">
-            <h1>Contact</h1>
+      <div class="container">
+        <div class="content">
+          <h1>Contact me</h1>
+          <div class="contentWrapper">
+              <div class="email">
+                  <span class="fas fa-envelope"></span>
+                  <span class="information">sxf754872493@gmail.com</span>
+                </div>
+      
+                <div class="qq">
+                  <span class="fab fa-qq"></span>
+                  <span class="information">754872493</span>
+                </div>
+      
+                <div class="weChat">
+                  <span class="fab fa-weixin"></span>
+                  <span class="information">15158112184</span>
+                </div>
+          </div>
+          
+
         </div>
-      </main>
+
+      </div>
+    </main>
   </div>
   <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
   <script type="text/javascript" src="./vendor/vanilla-tilt.min.js"></script>
