@@ -12,7 +12,10 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
     crossorigin="anonymous">
   <style>
-    @media screen and (min-width: 768px){
+    @media screen and (max-width:767px) {
+
+    }
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
       .aboutMe,
       .portfolio .container,
       .skills .container,
@@ -20,79 +23,46 @@
         margin-left: 230px;
       }
       .aside{
-        position: fixed;
-        top: 0;
-        left: 0;
         width: 230px;
         height: 100%;
-        background: #fff;
-        z-index: 99;
       }
       html,body{
         background: #fbfbfb;
       }
       
       .aside .myResume{
-        display: inline-block;
         font-size: 26px;
-        font-weight: 800;
         margin-top: 64px;
-        margin-left: 44px;
+        margin-left: 40px;
+        left: 2px;
+      }
+      .aside button{
+        display: none;
       }
       .aside ul{
-        padding: 44px;
-        margin-top: 32px;
+        display: block;
+        opacity: 1;
+        top: 132px;
       }
       .aside li{
         margin: 32px 0;
       }
       .aside .nav-item{
-        font-size: 22px;
-        line-height: 22px;
-        font-weight: 300;
-        color: #b4b5b4;
+        font-size: 24px;
+        line-height: 24px;
         display: flex;
-        align-items: flex-end;
-        transition: all 0.2s;
       }
-      .aside .nav-item:hover{
-        color: #000;
-      }
-      .aside .nav-item::before{
-        content: '';
-        display: block;
+      .aside .footerContainer{
         position: absolute;
-        background: #000;
-        height: 1px;
-        width: 0px;
-        left: -44px;
-        top: 11px;
-      }
-      .aside .nav-item.active{
-        color: #000;
-        position: relative;
-      }
-      .aside .nav-item.active::before{
-        content: '';
+        top: 100%;
+        left: 44px;
         display: block;
-        position: absolute;
-        background: #000;
-        height: 1px;
-        width: 26px;
-        left: -44px;
-        top: 11px;
-        transition: width 0.2s ease-out;
-      }
-      .aside .nav-item .en{
-        font-size: 14px;
-        line-height: 14px;
-        margin-left: 0.4em;
+        opacity: 1;
       }
       .aside .footer{
+        display: flex;
         position: absolute;
         bottom: 40px;
-        left: 44px;
-        display: flex;
       }
       .aside .footer .iconBook{
         font-size: 1.1em;
@@ -122,9 +92,61 @@
         color: #fff;
         background: #000;
       }
+      .aboutMe{
+        padding: 40px;
+      }
+      .aboutMe .picture{
+        display: block;
+        flex: 1 1 50%;
+        text-align: center;
+        margin-top: 0;
+      }
+      .aboutMe .container{
+        flex-direction: row;
+        align-items: flex-start;
+        margin-top: 0px;
+      }
+      .aboutMe .container .selfIntroduction{
+        width: 100%;
+        margin-left: 32px;
+      }
+      .portfolio,
+      .skills,
+      .contact{
+        padding: 0;
+      }
+      .portfolio .container,
+      .skills .container,
+      .contact .container{
+        padding: 40px 40px;
+      }
+      .portfolio h1,
+      .skills h1,
+      .contact h1{
+        font-size: 42px;
+        font-weight: 400;
+        line-height: 42px;
+      }
+      .item .itemHeader{
+        margin: 36px 0;
+      }
+      .item .Introduction{
+        margin-top: 24px;
+      }
+      .item h2{
+        font-weight: 400;
+        margin-bottom: 24px;
+      }
+      .item p{
+        margin: 16px 0;
+      }
+      .contact .information{
+        font-size: 28px;
+      }
     }
-    @media screen and(min-width: 1024px) {
+    @media screen and (min-width: 1025px) and (max-width:1280px) {
       
+    
       .skills ul{
         display: flex;
         flex-direction: row;
@@ -137,7 +159,7 @@
       }
       
     }
-    @media screen and(min-width: 1280px){
+    @media screen and (min-width: 1280px) {
       
       .aboutMe .container .selfIntroduction{
         width: 100%;
@@ -274,7 +296,7 @@
               </div>
               <div class="image">
                 <img src="./img/canvas.jpg" alt="" data-tilt data-tilt-max="10" data-tilt-speed="300"
-                  data-tilt-perspective="1000" data-tilt-scale="1.08">
+                  data-tilt-perspective="1000" data-tilt-scale="1.05">
               </div>
             </div>
           </div>
@@ -299,7 +321,7 @@
               </div>
               <div class="image">
                 <img src="./img/canvas.jpg" alt="" data-tilt data-tilt-max="10" data-tilt-speed="300"
-                  data-tilt-perspective="1000" data-tilt-scale="1.08">
+                  data-tilt-perspective="1000" data-tilt-scale="1.05">
               </div>
             </div>
           </div>
