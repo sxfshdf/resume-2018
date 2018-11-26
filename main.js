@@ -1,60 +1,70 @@
 !function(){
-  ScrollReveal().reveal('.picture',{
-    delay: 0,
-    useDelay: 'always',
-    reset: true,
-    distance: '20px',
-    duration: 500 ,
-    easing: 'ease'
-  })
-  ScrollReveal().reveal('.selfIntroduction', { 
-    delay: 300,
-    useDelay: 'always',
-    reset: true,
-    distance: '20px',
-    duration: 500 ,
-    easing: 'ease'
-  })
-  ScrollReveal().reveal('h1', { 
-    delay: 0,
-    useDelay: 'always',
-    reset: true,
-    distance: '20px',
-    duration: 500 ,
-    easing: 'ease'
-  })
-  ScrollReveal().reveal('.canvas', { 
+  var nodeArray = [
+    document.querySelector('.picture'),
+    document.querySelector('.selfIntroduction'),
+    document.querySelector('.canvas'),
+    document.querySelector('.fm'),
+    document.querySelector('.skillsWrapper'),
+    document.querySelector('.contentWrapper')
+  ]
+  var slidup = {
     delay: 200,
     useDelay: 'always',
     reset: true,
     distance: '20px',
     duration: 500 ,
     easing: 'ease'
-  })
-  ScrollReveal().reveal('.fm', { 
-    delay: 300,
-    useDelay: 'always',
-    reset: true,
-    distance: '20px',
-    duration: 500 ,
-    easing: 'ease'
-  })
-  ScrollReveal().reveal('.skillsWrapper', { 
-    delay: 200,
-    useDelay: 'always',
-    reset: true,
-    distance: '20px',
-    duration: 500 ,
-    easing: 'ease'
-  })
-  ScrollReveal().reveal('.contentWrapper', { 
-    delay: 300,
-    useDelay: 'always',
-    reset: true,
-    distance: '0',
-    duration: 500 ,
-    easing: 'ease'
-  })
+  }
+  ScrollReveal().reveal(nodeArray,slidup)
+  ScrollReveal().reveal('h1',slidup)
+  // ScrollReveal().reveal('.selfIntroduction', { 
+  //   delay: 300,
+  //   useDelay: 'always',
+  //   reset: true,
+  //   distance: '20px',
+  //   duration: 500 ,
+  //   easing: 'ease'
+  // })
+  // ScrollReveal().reveal('h1', { 
+  //   delay: 300,
+  //   useDelay: 'always',
+  //   reset: true,
+  //   distance: '20px',
+  //   duration: 500 ,
+  //   easing: 'ease'
+  // })
+  // ScrollReveal().reveal('.canvas', { 
+  //   delay: 300,
+  //   useDelay: 'always',
+  //   reset: true,
+  //   distance: '20px',
+  //   duration: 500 ,
+  //   easing: 'ease'
+  // })
+  // ScrollReveal().reveal('.fm', { 
+  //   delay: 300,
+  //   useDelay: 'always',
+  //   reset: true,
+  //   distance: '20px',
+  //   duration: 500 ,
+  //   easing: 'ease'
+  // })
+  // ScrollReveal().reveal('.skillsWrapper', { 
+  //   delay: 300,
+  //   useDelay: 'always',
+  //   reset: true,
+  //   distance: '20px',
+  //   duration: 500 ,
+  //   easing: 'ease'
+  // })
+  // ScrollReveal().reveal('.contentWrapper', { 
+  //   delay: 300,
+  //   useDelay: 'always',
+  //   reset: true,
+  //   distance: '0',
+  //   duration: 500 ,
+  //   easing: 'ease'
+  // })
   // 点击菜单
   var $hamburger = $(".hamburger");
   $hamburger.on("click", function(e) {
@@ -94,7 +104,7 @@
       $(element).addClass('visible')
         .siblings('.visible').removeClass('visible')
     }
-    ScrollReveal().reveal('.picture', { afterReset: myCallback })
+    ScrollReveal().reveal(nodeArray, { afterReset: myCallback })
     setTimeout(()=>{removeClass()},300)
   })
   
