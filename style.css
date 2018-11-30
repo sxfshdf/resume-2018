@@ -11,6 +11,7 @@ html,body{
   height: 100%;
   font-family: "PingFang SC",  "Hiragino Sans GB","Source Han Sans CN","Helvetica Neue", Arial, 'STHeiti', "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC",  "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
   background: #fff;
+  line-height: 1.5;
 }
 .pageWrapper{
   height: 100%;
@@ -238,8 +239,9 @@ html,body{
 .aboutMe .education,.aboutMe .work,
 .aboutMe .city{
   white-space: nowrap;
-  margin-right: 20px;
-  width: 4em;
+  margin-right: 24px;
+  width: 4.5em;
+  text-align: right;
 }
 .aboutMe span{
   display: inline-block;
@@ -334,7 +336,6 @@ html,body{
   margin: 12px 0;
   letter-spacing: 0;
   line-height: 26px;
-  text-align: justify;
 }
 .item img{
   max-width: 100%;

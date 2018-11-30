@@ -12,9 +12,6 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
     crossorigin="anonymous">
   <style>
-    @media screen and (max-width:767px) {
-
-    }
     @media screen and (min-width: 768px) and (max-width: 1024px) {
       .aboutMe,
       .portfolio .container,
@@ -22,6 +19,7 @@
       .contact .container{
         margin-left: 230px;
       }
+      
       .aside{
         width: 230px;
         height: 100%;
@@ -607,13 +605,13 @@
             <div class="itemDetail">
               <div class="Introduction">
                 <h2>Canvas画板 </h2>
-                <p>该项目使用原生JS实现，主要调用 Canvas API，实现了划线、调色、橡皮擦、保存等功能。完全由我独立开发。用 XXX 实现了 XXX 功能，用 XXX 实现了 XXX 功能。</p>
-                <p>关键词：<span class="strong">原生 JavaScript、Canvas、响应式、jQuery、Vue </span></p>
+                <p>该项目使用原生JS实现，主要调用 Canvas API，实现了划线、调色、橡皮擦、保存等功能。完全由我独立开发。用 clearRect() 实现了橡皮擦功能，用 lineTo() 实现了划线功能。lineWidth来调整划线的粗细变化。onmousedown(),onmousemove(),onmouseup()实现用户鼠标的监听。ontouchstart(),ontouchmove(),ontouchend()实现触摸的监听。getImageData()和putImageData()设置画布尺寸变化内容不消失。</p>
+                <p>关键词：<span class="strong">原生 JavaScript、Canvas、响应式、jQuery </span></p>
                 <div class="button">
-                  <a href="">
+                  <a href="https://sxfshdf.github.io/canvas-demo/index.html" target="blank">
                     <span class="try">Try it</span>
                   </a>
-                  <a href="">
+                  <a href="https://github.com/sxfshdf/canvas-demo">
                     <span class="github">Github</span>
                   </a>
                 </div>
