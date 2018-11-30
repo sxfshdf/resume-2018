@@ -105,7 +105,7 @@
         .siblings('.visible').removeClass('visible')
     }
     ScrollReveal().reveal(nodeArray, { afterReset: myCallback })
-    setTimeout(()=>{removeClass()},300)
+    setTimeout(()=>{removeClass()},200)
   })
   
   function myCallback (el) {
