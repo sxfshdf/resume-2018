@@ -1,0 +1,208 @@
+*{padding: 0; margin: 0;}
+*{box-sizing: border-box;}
+*::after{box-sizing: border-box;}
+*::before{box-sizing: border-box;}
+
+html,body{
+  font-family: "PingFang SC",  "Hiragino Sans GB","Source Han Sans CN","Helvetica Neue", Arial, 'STHeiti', "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC",  "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
+  background: #fbfbfb;
+  line-height: 1.5;
+  font-size: 14px;
+}
+ul,li{
+  list-style: none;
+}
+a{text-decoration: none;}
+
+.page{
+  padding: 40px;
+}
+header {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+header .picture{
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background: #333;
+  position: relative;
+}
+header .picture::after{
+  content: '';
+  display: block;
+  position: absolute;
+  height: 88px;
+  width: 88px;
+  border: 1px solid #333;
+  border-radius: 50%;
+  left: -4px;
+  top: -4px;
+}
+header .selfIntroduction{
+  flex-grow: 1;
+  font-weight: 300;
+}
+header h1{
+  font-size: 26px;
+  font-weight: 800;
+  margin-bottom: -2px;
+}
+header .introduction{
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 400;
+}
+header .contact{
+  margin-top: 6px;
+}
+header .contact span{
+  font-size: 9px;
+  font-weight: 400;
+  display: inline-block;
+  margin-right: 20px;
+}
+header .contact .abbr{
+  font-weight: 800;
+  margin-right: 4px;
+}
+
+.separation{
+  border-top: 1px solid #666;
+  margin: 32px 0;
+}
+
+main{
+  display: flex;
+  height: 100%;
+}
+main .left{
+  /* border: 1px solid red; */
+  width: 240px;
+  flex-shrink: 0;
+}
+main .main-separation{
+  border-right: 1px solid #666;
+  margin: 0 32px;
+  height: 880px;
+}
+main .right{
+  width: 100%;
+  /* border: 1px solid green; */
+}
+.title{
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  margin-left: 10px;
+}
+.title::after{
+  content: '';
+  display: block;
+  position: absolute;
+  height: 14px;
+  width: 4px;
+  background: #333;
+  top: 3px;
+  left: -10px;
+}
+.title .name{
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 800;
+  margin-right: 6px;
+}
+.title .en{
+  display: inline-block;
+  font-size: 9px;
+  font-weight: 800;
+}
+main ul{
+  font-size: 12px;
+  margin-top: 16px; 
+}
+main ul span{
+  display: inline-block;
+}
+main ul .type{
+  white-space: nowrap;
+  font-weight: 600;
+} 
+main .aboutMe ul .type{
+  width: 4.5em;
+  text-align: right;
+  margin-right: 8px;
+}
+main .aboutMe ul li{
+  display: flex;
+  margin: 8px 0;
+}
+main .skills,
+main .others{
+  margin-top: 32px;
+}
+main .skills ul li{
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+}
+main .skills ul .type{
+  margin-bottom: 4px;
+  font-size: 12px;
+}
+main .skills span{
+  font-size: 11px;
+}
+main .others .others-container{
+  margin-top: 16px;
+}
+main .others .fa-book-open,
+main .others .fa-github{
+  display: inline-block;
+  font-size: 9px;
+  color: #fff;
+  height: 24px;
+  width: 24px;
+  background: #333;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 24px;
+  margin-right: 6px;
+}
+main .others .fa-github{
+  font-size: 14px;
+}
+main .others a{
+  font-size: 9px;
+}
+main .github{
+  margin-top: 12px;
+}
+
+.right .itemWrapper{
+  margin-top: 16px;
+}
+.right h2{
+  font-size: 14px;
+  font-weight: 800;
+}
+.right p{
+  font-size: 12px;
+  margin: 8px 0;
+}
+.right p .strong{
+  font-weight: 600;
+}
+.right span{
+  font-size: 12px;
+}
+.right .button{
+  margin: 8px 0;
+}
+.right .button span{
+  margin-right: 10px;
+}
+.right .item{
+  margin: 16px 0;
+}
