@@ -15,12 +15,32 @@ ul,li{
 a{text-decoration: none;}
 
 .page{
-  padding: 40px;
+  padding: 32px;
 }
 header {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
+}
+.resumeOnline{
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  position: relative;
+  margin-left: 10px;
+}
+.resumeOnline::after{
+  content: '';
+  display: block;
+  position: absolute;
+  height: 12px;
+  width: 4px;
+  background: #333;
+  top: 3px;
+  left: -10px;
+}
+.resumeOnline a{
+  font-weight: 400;
 }
 header .picture{
   height: 80px;
@@ -73,7 +93,7 @@ header .contact .abbr{
 
 .separation{
   border-top: 1px solid #666;
-  margin: 32px 0;
+  margin: 28px 0;
 }
 
 main{
@@ -91,7 +111,7 @@ main .main-separation{
   height: 880px;
 }
 main .right{
-  width: 100%;
+  flex-grow: 1;
   /* border: 1px solid green; */
 }
 .title{
@@ -143,7 +163,7 @@ main .aboutMe ul li{
 }
 main .skills,
 main .others{
-  margin-top: 32px;
+  margin-top: 28px;
 }
 main .skills ul li{
   margin-top: 8px;
