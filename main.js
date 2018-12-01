@@ -3,6 +3,8 @@
     document.querySelector('.picture'),
     document.querySelector('.selfIntroduction'),
     document.querySelector('.canvas'),
+    document.querySelector('.keyboard'),
+    document.querySelector('.minions'),
     document.querySelector('.fm'),
     document.querySelector('.skillsWrapper'),
     document.querySelector('.contentWrapper')
