@@ -5,7 +5,7 @@
 
 html,body{
   font-family: "PingFang SC",  "Hiragino Sans GB","Source Han Sans CN","Helvetica Neue", Arial, 'STHeiti', "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC",  "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
-  background: #fbfbfb;
+  /* background: #fbfbfb; */
   line-height: 1.5;
   font-size: 14px;
 }
@@ -15,36 +15,70 @@ ul,li{
 a{text-decoration: none;}
 
 .page{
-  padding: 32px;
+  /* padding: 32px; */
 }
+
+/*  header */ 
+
 header {
   display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
+  align-items: flex-start;
+  background: #000;
+  padding: 20px 20px;
+  color: #fff;
+  position: relative;
+  padding-top: 80px;
+}
+header::before{
+  display: block;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/head-bg.jpg');
+  /* height: 200px; */
+  background-position: center center;
+  background-size: cover;
+  opacity: 0.2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: blur(4px);
+}
+header .seperation{
+  height: 204px;
+  width: 1px;
+  background: #444;
+  margin: 0 20px;
+  z-index: 1;
 }
 .resumeOnline{
-  font-size: 12px;
-  font-weight: 600;
-  margin-bottom: 8px;
-  position: relative;
-  margin-left: 10px;
+  font-size: 9px;
+  padding: 10px;
+  position: absolute;
+  /* background: #333; */
+  color: #fff;
+  top: 16px;
+  /* z-index: 2; */
+  /* left: 20px; */
+  /* transform: translateX(-50%); */
 }
-.resumeOnline::after{
+/* .resumeOnline::after{
   content: '';
   display: block;
   position: absolute;
   height: 12px;
   width: 4px;
-  background: #333;
+  background: #000;
   top: 3px;
   left: -10px;
-}
+} */
 .resumeOnline a{
-  font-weight: 400;
+  font-size: 9px;
+  color: #38c9e5;
 }
 header .picture{
-  height: 80px;
-  width: 80px;
+  height: 88px;
+  width: 88px;
   border-radius: 50%;
   /* background: #333; */
   position: relative;
@@ -56,176 +90,202 @@ header .picture::after{
   content: '';
   display: block;
   position: absolute;
-  height: 88px;
-  width: 88px;
-  border: 1px solid #333;
+  height: 96px;
+  width: 96px;
+  border: 1px solid #555;
   border-radius: 50%;
   left: -4px;
   top: -4px;
 }
-header .selfIntroduction{
-  flex-grow: 1;
-  font-weight: 300;
+
+header .wrapper{
+  /* font-weight: 300; */
+  display: flex;
+  z-index: 1;
+}
+header .contentWrapper{
+  margin-left: 28px;
+}
+header .contentWrapper .type{
+  display: inline-block;
+  width: 5em;
+  text-align: right;
+  margin-right: 6px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+header .contentWrapper .aboutMe{
+  font-size: 9px;
+  margin-top: 8px;
+  position: relative;
+  padding-top: 8px;
+  color: #fff;
+}
+header .contentWrapper .aboutMe::after{
+  content: '';
+  display: block;
+  height: 1px;
+  top: 0;
+  width: 100%;
+  background: #444;
+  position: absolute;
+}
+header .contentWrapper .aboutMe li{
+  margin-bottom: 4px;
+  display: flex;
 }
 header h1{
-  font-size: 26px;
-  font-weight: 800;
+  font-size: 18px;
+  font-weight: 600;
   margin-bottom: -2px;
 }
 header .introduction{
   display: inline-block;
-  font-size: 12px;
-  font-weight: 400;
+  font-size: 9px;
 }
 header .contact{
-  margin-top: 6px;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+header .contact a{
+  color: #38c9e5;
 }
 header .contact span{
   font-size: 9px;
-  font-weight: 400;
   display: inline-block;
   margin-right: 20px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
 }
-header .contact .abbr{
+header .contact span.github{
+  margin-top: 64px;
+}
+header .contact i{
+  height: 20px;
+  width: 20px;
+  /* background: #eee; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: #eee;
+  font-size: 9px;
+  margin-right: 8px;
+}
+header .contact i.phone{
+  padding-top: 1px;
+}
+header .contact i.wechat,
+header .contact i.github{
+  font-size: 10px;
+}
+
+/* main */
+
+main {
+  padding: 20px;
+}
+main .title{
+  background: #333;
+  padding: 4px 10px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+main .title .name{
+  font-size: 16px;
   font-weight: 800;
-  margin-right: 4px;
+}
+main .title .en{
+  font-size: 12px;
+  margin-left: 4px;
 }
 
-.separation{
-  border-top: 1px solid #666;
-  margin: 28px 0;
-}
+/* main item */
 
-main{
-  display: flex;
-  height: 100%;
-}
-main .left{
-  /* border: 1px solid red; */
-  width: 240px;
-  flex-shrink: 0;
-}
-main .main-separation{
-  border-right: 1px solid #666;
-  margin: 0 32px;
-  height: 880px;
-}
-main .right{
-  flex-grow: 1;
-  /* border: 1px solid green; */
-}
-.title{
-  display: flex;
-  align-items: flex-end;
+main .item{
   position: relative;
-  margin-left: 10px;
+  margin: 28px 0;
+  padding: 0 10px;
 }
-.title::after{
+main .item.minions{
+  padding-top: 32px;
+  margin-top: 240px;
+}
+main .item::after{
   content: '';
   display: block;
   position: absolute;
-  height: 14px;
-  width: 4px;
-  background: #333;
-  top: 3px;
-  left: -10px;
+  height: 1px;
+  background: #eee;
+  width: 100%;
+  bottom: -14px;
 }
-.title .name{
-  display: inline-block;
-  font-size: 14px;
-  font-weight: 800;
-  margin-right: 6px;
-}
-.title .en{
-  display: inline-block;
-  font-size: 9px;
-  font-weight: 800;
-}
-main ul{
-  font-size: 12px;
-  margin-top: 16px; 
-}
-main ul span{
-  display: inline-block;
-}
-main ul .type{
-  white-space: nowrap;
-  font-weight: 600;
-} 
-main .aboutMe ul .type{
-  width: 4.5em;
-  text-align: right;
-  margin-right: 8px;
-}
-main .aboutMe ul li{
+main .itemDetail{
   display: flex;
-  margin: 8px 0;
+  flex-direction: row-reverse;
+  align-items: center;
 }
-main .skills,
-main .others{
-  margin-top: 28px;
+main .itemDetail .itemImg{
+  /* flex: 1; */
+  width: 40%;
+  margin-left: 32px;
+  
 }
-main .skills ul li{
-  margin-top: 8px;
+main .itemDetail .itemImg img{
+  max-width: 100%;
+  border-radius: 2px;
+}
+main .itemDetail .Introduction{
+  flex: 1;
+}
+main .itemDetail h2{
+  font-size: 13px;
+  font-weight: 600;
+}
+main .itemDetail p.itemInfo{
+  color: #666;
+}
+main .itemDetail p{
+  font-size: 9px;
+  margin: 10px 0;
+}
+main .itemDetail .button span{
+  font-size: 9px;
+  color: #38c9e5;
+  position: relative;
+}
+main .itemDetail .button span.github{
+  margin-left: 8px;
+}
+/* main .itemDetail .button span::after{
+  content: '';
+  display: block;
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background: #38c9e5;
+  bottom: 0;
+  margin-top: 2px;
+} */
+
+/*  main skills */
+
+main .skills .skillsWrapper{
+  padding: 0 10px;
+}
+main .skills ul>li{
   display: flex;
   flex-direction: column;
+  margin: 10px 0;
 }
-main .skills ul .type{
-  margin-bottom: 4px;
+main .skills ul>li .type{
   font-size: 12px;
-}
-main .skills span{
-  font-size: 11px;
-}
-main .others .others-container{
-  margin-top: 16px;
-}
-main .others .fa-book-open,
-main .others .fa-github{
-  display: inline-block;
-  font-size: 9px;
-  color: #fff;
-  height: 24px;
-  width: 24px;
-  background: #333;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 24px;
-  margin-right: 6px;
-}
-main .others .fa-github{
-  font-size: 14px;
-}
-main .others a{
-  font-size: 9px;
-}
-main .github{
-  margin-top: 12px;
-}
-
-.right .itemWrapper{
-  margin-top: 16px;
-}
-.right h2{
-  font-size: 14px;
-  font-weight: 800;
-}
-.right p{
-  font-size: 12px;
-  margin: 8px 0;
-}
-.right p .strong{
   font-weight: 600;
+  color: #000;
 }
-.right span{
-  font-size: 12px;
-}
-.right .button{
-  margin: 8px 0;
-}
-.right .button span{
-  margin-right: 10px;
-}
-.right .item{
-  margin: 16px 0;
+main .skills ul>li span{
+  font-size: 9px;
+  color: #666;
 }
