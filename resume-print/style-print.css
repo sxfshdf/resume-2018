@@ -8,6 +8,7 @@ html,body{
   /* background: #fbfbfb; */
   line-height: 1.5;
   font-size: 14px;
+  background: #fbfbfb;
 }
 ul,li{
   list-style: none;
@@ -110,13 +111,13 @@ header .contentWrapper .type{
   display: inline-block;
   width: 5em;
   text-align: right;
-  margin-right: 6px;
+  margin-right: 12px;
   white-space: nowrap;
   flex-shrink: 0;
 }
 header .contentWrapper .aboutMe{
-  font-size: 9px;
-  margin-top: 8px;
+  font-size: 10px;
+  margin-top: 10px;
   position: relative;
   padding-top: 8px;
   color: #fff;
@@ -125,13 +126,13 @@ header .contentWrapper .aboutMe::after{
   content: '';
   display: block;
   height: 1px;
-  top: 0;
+  top: -2px;
   width: 100%;
   background: #444;
   position: absolute;
 }
 header .contentWrapper .aboutMe li{
-  margin-bottom: 4px;
+  margin-bottom: 8px;
   display: flex;
 }
 header h1{
@@ -141,7 +142,7 @@ header h1{
 }
 header .introduction{
   display: inline-block;
-  font-size: 9px;
+  font-size: 10px;
 }
 header .contact{
   display: flex;
@@ -152,7 +153,7 @@ header .contact a{
   color: #38c9e5;
 }
 header .contact span{
-  font-size: 9px;
+  font-size: 10px;
   display: inline-block;
   margin-right: 20px;
   display: flex;
@@ -179,7 +180,7 @@ header .contact i.phone{
 }
 header .contact i.wechat,
 header .contact i.github{
-  font-size: 10px;
+  font-size: 12px;
 }
 
 /* main */
@@ -188,32 +189,53 @@ main {
   padding: 20px;
 }
 main .title{
-  background: #333;
-  padding: 4px 10px;
-  color: #fff;
-  margin-bottom: 20px;
+  color: #333;
 }
 main .title .name{
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 800;
+  margin-left: 8px;
+}
+main .title .skill,
+main .title .folder{
+  font-size: 13px;
 }
 main .title .en{
   font-size: 12px;
   margin-left: 4px;
 }
-
+main .itemWrapper{
+  padding-top: 20px;
+}
 /* main item */
 
+/* main .portfolio{
+  display: flex;
+  align-items: flex-start;
+} */
+main .portfolio .title{
+  display: flex;
+  align-items: center;
+}
+main .portfolio .title span{
+  display: inline-block;
+  white-space: nowrap;
+}
 main .item{
   position: relative;
-  margin: 28px 0;
-  padding: 0 10px;
+  background: #fff;
+  padding: 16px;
+  border-radius: 2px;
+  margin-bottom: 10px;
+  /* box-shadow: 0 0 14px rgba(0,0,0,0.1); */
 }
-main .item.minions{
+main .item.keyboard{
+  margin-top: 80px;
+}
+/* main .item.minions{
   padding-top: 32px;
-  margin-top: 240px;
-}
-main .item::after{
+} */
+/* main .item::after{
   content: '';
   display: block;
   position: absolute;
@@ -221,16 +243,16 @@ main .item::after{
   background: #eee;
   width: 100%;
   bottom: -14px;
-}
+} */
 main .itemDetail{
   display: flex;
   flex-direction: row-reverse;
-  align-items: center;
+  align-items: flex-start;
 }
 main .itemDetail .itemImg{
-  /* flex: 1; */
-  width: 40%;
-  margin-left: 32px;
+  flex: 1;
+  /* width: 40%; */
+  margin-left: 28px;
   
 }
 main .itemDetail .itemImg img{
@@ -238,11 +260,12 @@ main .itemDetail .itemImg img{
   border-radius: 2px;
 }
 main .itemDetail .Introduction{
-  flex: 1;
+  width: 46%;
 }
 main .itemDetail h2{
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 600;
+  margin-bottom: 20px;
 }
 main .itemDetail p.itemInfo{
   color: #666;
@@ -271,14 +294,17 @@ main .itemDetail .button span.github{
 } */
 
 /*  main skills */
-
+main .skills .title{
+  margin: 20px 0 20px 0;
+}
 main .skills .skillsWrapper{
-  padding: 0 10px;
+  padding: 20px;
+  background: #fff;
 }
 main .skills ul>li{
   display: flex;
   flex-direction: column;
-  margin: 10px 0;
+  margin-bottom: 10px;
 }
 main .skills ul>li .type{
   font-size: 12px;
