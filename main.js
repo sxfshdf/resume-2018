@@ -5,7 +5,8 @@
     document.querySelector('.canvas'),
     document.querySelector('.keyboard'),
     document.querySelector('.minions'),
-    document.querySelector('.fm'),
+    document.querySelector('.cnode'),
+    document.querySelector('.music'),
     document.querySelector('.skillsWrapper'),
     document.querySelector('.contentWrapper')
   ]
