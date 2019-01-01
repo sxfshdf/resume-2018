@@ -320,7 +320,7 @@ html,body{
   flex: 1;
 }
 .item img:hover{
-  box-shadow: 0 20px 28px -10px rgba(0, 0, 0, .44);
+  /* box-shadow: 0 20px 28px -10px rgba(0, 0, 0, .44); */
 }
 .item .Introduction{
   flex: 1;
@@ -354,8 +354,8 @@ html,body{
   border-radius: 2px;
 }
 .item .button span:hover{
-  color: #fff;
-  background: #000;
+  /* color: #fff;
+  background: #000; */
 }
 .item .button .github{
   margin-left: 8px;
