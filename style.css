@@ -299,6 +299,9 @@ html,body{
 .portfolio .itemDecription{
   color: #888;
 }
+.portfolio .itemWrapper{
+  padding-bottom: 30px;
+}
 .item .itemHeader{
   font-size: 16px;
   font-weight: 400;
