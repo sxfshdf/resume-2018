@@ -87,7 +87,13 @@
                 </div>
                 <div class="Introduction">
                   <h2>1. Vue.js搭建cnode社区 </h2>
-                  <p class="itemInfo">使用vue脚手架vue-cli搭建cnode社区，调用cnode社区提供的 Api，</p>
+                  <div class="itemInfo">
+                    <p>· 使用vue脚手架vue-cli搭建cnode社区，主要通过调用cnode社区提供的 Api获取相关的数据。</p>
+                    <p>· 单页面模式，使用vue-router实现跳转，对应不同组件。</p>
+                    <p>· 主要内容包括首页文章列表，文章详情，用户主页，登录验证等页面。</p>
+                    <p>· 登录时需要先去cnode网站获取账户的Access Token，再进行验证登录。</p>
+                    <p>· 登录之后可以在文章的详情页进行点赞，回复其他用户，评论文章的操作。</p>
+                  </div>
                   <p>关键词：<span class="strong">Vue.js、vue-router、组件之间的通信、计算属性、内置指令... </span></p>
                   <div class="button">
                     <a href="https://sxfshdf.github.io/cnode/dist/#/" target="_blank">
@@ -107,8 +113,13 @@
               </div>
               <div class="Introduction">
                 <h2>2.使用Vue重构有赞商城 </h2>
-                <p class="itemInfo">使用Vue重构有赞商城，包括首页，商品分类，详情，商品列表，购物车，收货地址管理页面。</p>
-                <p>关键词：<span class="strong">Vue，vuex，vue-router，多页面应用调整</span></p>
+                <div class="itemInfo">
+                  <p>· 使用Vue重构有赞商城，用多页面开发的方式，使用商城静态资源，用easy mock模拟数据。</p>
+                  <p>· 在详情页中可以查看商品的详细信息，最近交易的信息，以及添加到购物车的操作。</p>
+                  <p>· 购物车页面后可以对商品进行编辑，添加/减少数量，删除单个商品，全选删除。</p>
+                  <p>· 在收货地址页面可以对收货地址进行管理，主要使用vuex实现，可以添加/编辑/删除地址。</p>
+                </div>
+                <p>关键词：<span class="strong">Vue，vuex，vue-router，多页面应用调整，easy mock</span></p>
                 <div class="button">
                   <a href="https://sxfshdf.github.io/youzan/dist" target="_blank">
                     <span class="try">预览效果</span>
@@ -127,9 +138,13 @@
               </div>
               <div class="Introduction">
                 <h2>3. 仿网易云音乐-移动端 </h2>
-                <p class="itemInfo">该项目使用jQUery实现。
-                  <br>包含管理端(admin)页面：支持上传歌曲，编辑/删除歌曲，创建歌单，往歌单添加歌曲。
-                  <br>客户端：包括首页，歌单详情，歌曲播放页，搜索页。暂停/播放歌曲，播放动画，歌词展示。</p>
+                <div class="itemInfo">
+                  <p>· 该项目主要使用jQUery实现，使用七牛作为后台上传歌曲，leancloud做数据库存储数据。</p>
+                  <p>· 主要采用MVC模式，模块之间用eventHub进行信息传递，页面之间使用查询参数。</p>
+                  <p>· 管理端(admin)页面：可以上传歌曲，编辑/删除歌曲，创建/删除歌单，往歌单添加歌曲。</p>
+                  <p>· 客户端：主要从leancloud获取数据。包括歌单/歌曲展示，播放歌曲，播放动画，简单搜索歌曲。</p>
+                  
+                </div>
                 <p>关键词：<span class="strong">jQuery、七牛、Leancloud、Eventhub... </span></p>
                 <div class="button">
                   <a href="https://sxfshdf.github.io/163-music-demo/src/home.html" target="_blank">
@@ -150,7 +165,12 @@
               </div>
               <div class="Introduction">
                 <h2>4. Canvas画板 </h2>
-                <p class="itemInfo">该项目使用原生JS实现，主要调用 Canvas API，实现了划线、调色、橡皮擦、保存等功能。</p>
+                <div class="itemInfo">
+                  <p>· 该项目使用原生JS实现，主要功能都通过调用 Canvas API实现。</p>
+                  <p>· 主要实现了划线，橡皮擦，调整线条粗细，变换颜色，清除，保存的功能。</p>
+                  <p>· 可以适应pc端和手机端，通过监听touch事件，实现在手机端画画。</p>
+                  <p>· 主要API: getContext，clearRect，beginPath，moveTo，lineTo，closePsth，lineWidth...</p>
+                </div>
                 <p>关键词：<span class="strong">原生 JavaScript、Canvas、响应式、jQuery </span></p>
                 <div class="button">
                   <a href="https://sxfshdf.github.io/canvas-demo/index.html" target="_blank">
@@ -171,8 +191,13 @@
               </div>
               <div class="Introduction">
                 <h2>5. Keyboard导航 </h2>
-                <p class="itemInfo">使用原生 js 和 css 实现的一个导航功能的键盘，点击相应的按键可以跳到对应的网站，可以自定义各个按键上的网址。</p>
-                <p>关键词：<span class="strong">原生 JavaScript、CSS </span></p>
+                <div class="itemInfo">
+                  <p>· 使用原生 js 和 css 实现的一个导航功能的键盘。</p>
+                  <p>· 点击相应的按键可以跳到对应的网站，可以自定义各个按键上的网址。</p>
+                  <p>· 主要通过LocalStorage实现网址信息的存储，通过localStorage.setItem()和localStorage.getItem()</p>
+                  <p>&nbsp;&nbsp;设置和获取相关的信息。</p>
+                </div>
+                <p>关键词：<span class="strong">原生 JavaScript，CSS，LocalStorage </span></p>
                 <div class="button">
                   <a href="https://sxfshdf.github.io/nav-demo/index.html" target="_blank">
                     <span class="try">预览效果</span>
@@ -191,7 +216,12 @@
               </div>
               <div class="Introduction">
                 <h2>6. CSS画个小黄人 </h2>
-                <p class="itemInfo">使用原生 js 和 css 实现一个小黄人完成的动态过程。同时拥有调速的功能。用 &lt;pre&gt; 标签使代码保持原样。用 setTimeout() 代替 setInterval() ，再设置 duration，实现调速功能。</p>
+                <div class="itemInfo">
+                  <p>· 使用原生 js 和 css 实现一个小黄人完成的动态过程，通过按钮可以调整代码显示速度。</p>
+                  <p>· 主要使用substring方法，通过在body中和style标签中同时写入样式来实现功能。</p>
+                  <p>· 用&lt;pre&gt;标签使代码保持原样，用setTimeout()代替setInterval()，再设置duration，实现调速功能。</p>
+                  
+                </div>
                 <p>关键词：<span class="strong">Html5，JavaScript，CSS，异步和回调 </span></p>
                 <div class="button">
                   <a href="https://sxfshdf.github.io/css-minions/index.html" target="_blank">

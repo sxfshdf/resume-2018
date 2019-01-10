@@ -227,14 +227,16 @@ main .item{
   background: #fff;
   padding: 16px;
   border-radius: 2px;
-  margin-bottom: 10px;
+  margin-bottom: 16px;
   /* box-shadow: 0 0 14px rgba(0,0,0,0.1); */
 }
 main .canvasWrapper{
-  padding-top: 10px;
+  padding-top: 16px;
+  /* border: 1px solid red; */
+  margin-top: 160px;
 }
-main .item.keyboard{
-  margin-top: 10px;
+main .item.canvas{
+  /* margin-top: 160px; */
 }
 /* main .item.minions{
   padding-top: 32px;
@@ -264,15 +266,19 @@ main .itemDetail .itemImg img{
   border-radius: 2px;
 }
 main .itemDetail .Introduction{
-  width: 46%;
+  width: 56%;
 }
 main .itemDetail h2{
   font-size: 14px;
   font-weight: 600;
   margin-bottom: 20px;
 }
-main .itemDetail p.itemInfo{
+main .itemDetail .itemInfo{
+  margin-bottom: 16px;
+}
+main .itemDetail .itemInfo p{
   color: #666;
+  line-height: 1em;
 }
 main .itemDetail p{
   font-size: 9px;
@@ -330,7 +336,7 @@ main .skills ul>li span{
 
 footer{
   font-size: 9px;
-  margin-top: 90px;
+  margin-top: 180px;
   bottom: 20px;
   text-align: center;
   padding-bottom:10px;

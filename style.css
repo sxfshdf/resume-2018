@@ -296,18 +296,23 @@ html,body{
   display: flex;
   flex-direction: column-reverse;
 }
-.portfolio .itemDecription{
+/* .portfolio .itemInfo{
+
+} */
+.portfolio .itemDecription p{
   color: #888;
+  margin: 6px 0;
 }
 .portfolio .itemWrapper{
   padding-bottom: 30px;
 }
 .item .itemHeader{
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   display: flex;
   align-items: center;
-  margin: 28px 0;
+  margin: 28px 0 0 0;
+  color: #888;
 }
 .item hr{
   flex: 1;
