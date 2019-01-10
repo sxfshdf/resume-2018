@@ -8,7 +8,8 @@
     document.querySelector('.cnode'),
     document.querySelector('.music'),
     document.querySelector('.skillsWrapper'),
-    document.querySelector('.contentWrapper')
+    document.querySelector('.contentWrapper'),
+    document.querySelector('.youzan')
   ]
   var slidup = {
     delay: 200,
