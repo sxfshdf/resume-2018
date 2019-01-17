@@ -46,7 +46,8 @@ header::before{
   filter: blur(4px);
 }
 header .seperation{
-  height: 204px;
+  /* height: 204px; */
+  height: 160px;
   width: 1px;
   background: #444;
   margin: 0 20px;
@@ -84,7 +85,7 @@ header .picture{
   border-radius: 50%;
   /* background: #333; */
   position: relative;
-  background-image: url('./img/user.jpg');
+  background-image: url('../img/avatar.jpg');
   background-position: center center;
   background-size: cover;
 }
@@ -162,7 +163,8 @@ header .contact span{
   margin-bottom: 4px;
 }
 header .contact span.github{
-  margin-top: 64px;
+  /* margin-top: 64px; */
+  margin-top: 16px;
 }
 header .contact i{
   height: 20px;
@@ -291,6 +293,9 @@ main .itemDetail .button span{
 }
 main .itemDetail .button span.github{
   margin-left: 8px;
+}
+main .itemDetail .button span.github.translate{
+  margin-left: 0;
 }
 /* main .itemDetail .button span::after{
   content: '';

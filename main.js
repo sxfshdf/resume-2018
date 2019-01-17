@@ -4,7 +4,7 @@
     document.querySelector('.selfIntroduction'),
     document.querySelector('.canvas'),
     document.querySelector('.keyboard'),
-    document.querySelector('.minions'),
+    document.querySelector('.translate'),
     document.querySelector('.cnode'),
     document.querySelector('.music'),
     document.querySelector('.skillsWrapper'),
