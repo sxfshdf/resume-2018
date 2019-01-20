@@ -50,6 +50,10 @@
                       <span class="type">所在城市 :</span>
                       <span>杭州</span>
                     </li>
+                    <!-- <li>
+                      <span class="type">介绍 :</span>
+                      <span>具有解决开发过程中遇到的问题的能力，学习新的技术和知识，在完成需求的基础上让界面美观。</span>
+                    </li> -->
                   </ul>
                 </div>
               </div>
@@ -86,7 +90,7 @@
                   <img src="../img/cnode.jpg" alt="">
                 </div>
                 <div class="Introduction">
-                  <h2>1. Vue.js搭建cnode社区 </h2>
+                  <h2>1. Vue.js搭建技术社区 </h2>
                   <div class="itemInfo">
                     <p>· 使用vue脚手架vue-cli搭建cnode社区，主要通过调用cnode社区提供的 Api获取相关的数据。</p>
                     <p>· 单页面模式，使用vue-router实现跳转，对应不同组件。</p>
@@ -94,7 +98,8 @@
                     <p>· 登录时需要先去cnode网站获取账户的Access Token，再进行验证登录。</p>
                     <p>· 登录之后可以在文章的详情页进行点赞，回复其他用户，评论文章的操作。</p>
                   </div>
-                  <p>关键词：<span class="strong">Vue.js、vue-router、组件之间的通信、计算属性、内置指令... </span></p>
+                  <p>关键词：<span class="strong">Vue.js，vue-router，axios，组件之间的通信、计算属性、内置指令... </span></p>
+                  <p>总结：通过项目熟悉Vue的常用功能，以及通过axios来发起请求获取相关数据。项目中评论和点赞功能需要登陆之后才支持，开始想用vuex来保存状态，但是刷新之后保存的数据会消失，所以改用localStorage来存储。也做了手机端页面样式的相应调整。</p>
                   <div class="button">
                     <a href="https://sxfshdf.github.io/cnode/dist/#/" target="_blank">
                       <span class="try">预览效果</span>
@@ -112,14 +117,15 @@
                 <img src="../img/youzan.jpg" alt="">
               </div>
               <div class="Introduction">
-                <h2>2.使用Vue重构有赞商城 </h2>
+                <h2>2.使用Vue重构某移动端商城</h2>
                 <div class="itemInfo">
-                  <p>· 使用Vue重构有赞商城，用多页面开发的方式，使用商城静态资源，用easy mock模拟数据。</p>
+                  <p>· 使用Vue重构移动端商城，用多页面开发的方式，使用商城静态资源，用easy mock模拟数据。</p>
                   <p>· 在详情页中可以查看商品的详细信息，最近交易的信息，以及添加到购物车的操作。</p>
                   <p>· 购物车页面后可以对商品进行编辑，添加/减少数量，删除单个商品，全选删除。</p>
                   <p>· 在收货地址页面可以对收货地址进行管理，主要使用vuex实现，可以添加/编辑/删除地址。</p>
                 </div>
                 <p>关键词：<span class="strong">Vue，vuex，vue-router，多页面应用调整，easy mock</span></p>
+                <p>总结：学习Vue多页面开发模式，进一步了解Vue的功能和使用，以及模拟接口mock数据的一些方法。地址管理模块用了Vuex来管理状态，了解Vuex的使用方法。轮播和首页的最热商品分别用了swipe和mint UI。</p>
                 <div class="button">
                   <a href="https://sxfshdf.github.io/youzan/dist" target="_blank">
                     <span class="try">预览效果</span>
@@ -143,9 +149,9 @@
                   <p>· 主要采用MVC模式，模块之间用eventHub进行信息传递，页面之间使用查询参数。</p>
                   <p>· 管理端(admin)页面：可以上传歌曲，编辑/删除歌曲，创建/删除歌单，往歌单添加歌曲。</p>
                   <p>· 客户端：主要从leancloud获取数据。包括歌单/歌曲展示，播放歌曲，播放动画，简单搜索歌曲。</p>
-                  
                 </div>
                 <p>关键词：<span class="strong">jQuery、七牛、Leancloud、Eventhub... </span></p>
+                <p>总结：项目主要使用jQuery实现，熟悉jQuery的api及使用。了解后台和数据库的使用，主要通过查询leancloud和七牛的文档学习和使用，进行数据的存储/获取/修改/查询。客户端主要使用flex布局方式实现。使用JSON.stringify()和JSON.parse()进行数据的深拷贝。</p>
                 <div class="button">
                   <a href="https://sxfshdf.github.io/163-music-demo/src/home.html" target="_blank">
                     <span class="try">预览效果</span>
@@ -172,6 +178,7 @@
                   <p>· 主要API: getContext，clearRect，beginPath，moveTo，lineTo，closePsth，lineWidth...</p>
                 </div>
                 <p>关键词：<span class="strong">原生 JavaScript、Canvas、响应式、jQuery </span></p>
+                <p>总结： 通过查询Canvas常用的api实现简单的画板画画功能，了解和熟悉canvas相关的常用api。保存时默认会保存没有背景的图片，所以现在画板上设置了白色背景的画布，保存时会是白色背景。</p>
                 <div class="button">
                   <a href="https://sxfshdf.github.io/canvas-demo/index.html" target="_blank">
                     <span class="try">预览效果</span>
@@ -190,13 +197,14 @@
                 <img src="../img/fanyi.jpg" alt="">
               </div>
               <div class="Introduction">
-                <h2>5. 翻译工具（微信小程序） </h2>
+                <h2>5. easy翻译</h2>
                 <div class="itemInfo">
                   <p>· 一个微信小程序的翻译小工具。</p>
                   <p>· 调用了有道翻译的API，支持多种语言翻译，翻译结果可以播放语音。</p>
                   <p>· 自动保存翻译历史记录，用户可以根据需要删除。</p>
                 </div>
                 <p>关键词：<span class="strong">小程序</span></p>
+                <p>总结：通过项目学习使用小程序的开发，了解小程序的api。完成后发现textarea在ios和安卓上使用有差异，输入内容点击关闭按钮清除时，安卓上内容清除了但是还会继续显示，通过查询发现设置setTimeout()可以清除，同时去掉了bindblur事件。</p>
                 <div class="button">
                   <!-- <a href="https://sxfshdf.github.io/nav-demo/index.html" target="_blank">
                     <span class="try">预览效果</span>
@@ -292,11 +300,24 @@
               <span class="type">Vue</span>
               <span>熟悉 Vue 常用功能，如组件、Vue-Router、双向绑定等。</spanp>
             </li>
+            <li>
+              <span class="type">其他</span>
+              <span>开发中遇到问题分析解决的能力，学习新的技术和知识，实现需求的同时追求界面美观简洁。</spanp>
+            </li>
           </ul>
         </div>
       </div>
-        
-    </main>
+      <!-- <div class="skills">
+        <div class="title">
+            <span class="fas fa-user-astronaut"></span>
+            <span class="name">关于我</span> -->
+            <!-- <span class="en">Skills</span> -->
+        <!-- </div>
+        <div class="skillsWrapper">
+          对前端有浓厚的兴趣，具有解决开发中遇到的问题的能力，自我驱动能力，学习新的技术和知识，在完成需求的同时，追求界面美观。
+        </div>
+      </div>
+    </main> -->
    
   </div>
   <footer> 
